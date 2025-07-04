@@ -167,9 +167,10 @@ class KravItem(KjoretoyBaseModel):
 
 
 class AkselItem(KjoretoyBaseModel):
-
+    avstandTilNesteAksling: Optional[int] = None
     egenvektAksel: Optional[int] = None
     id: Optional[int] = None
+    luftfjaering: Optional[bool] = None
     plasseringAksel: Optional[str] = None
     tekniskTillattAkselLast: Optional[int] = None
 
@@ -375,6 +376,7 @@ class Persontall(KjoretoyBaseModel):
 
     sitteplasserForan: Optional[int] = None
     sitteplasserTotalt: Optional[int] = None
+    staplasser: Optional[int] = None
 
 
 class Tilhengerkopling(KjoretoyBaseModel):
