@@ -51,6 +51,9 @@ class Registrering(KjoretoyBaseModel):
     kjoringensArt: Optional[KjoringensArt] = None
     registreringsstatus: Optional[Registreringsstatus] = None
     registrertForstegangPaEierskap: Optional[str] = None
+    avregistrertSidenDato: Optional[str] = None
+    neringskode: Optional[str] = None
+    neringskodeBeskrivelse: Optional[str] = None
 
 
 class Godkjenningsundertype(KjoretoyBaseModel):
